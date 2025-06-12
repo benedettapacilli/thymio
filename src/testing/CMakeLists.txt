@@ -1,4 +1,6 @@
 add_subdirectory(thymio_diffusion)
+add_subdirectory(thymio_obstacle_avoidance)
+add_subdirectory(temperature_sensor)
 
 if(ARGOS_BUILD_FOR STREQUAL "thymio")
     add_subdirectory(sensor_test)

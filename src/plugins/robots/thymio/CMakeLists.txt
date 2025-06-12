@@ -7,6 +7,7 @@ set(ARGOS3_HEADERS_PLUGINS_ROBOTS_THYMIO_CONTROLINTERFACE
   control_interface/ci_thymio_proximity_sensor.h
   control_interface/ci_thymio_leds_actuator.h
   control_interface/ci_thymio_acc_sensor.h
+  control_interface/ci_thymio_positioning_sensor.h
   )
 
 if(ARGOS_BUILD_FOR_SIMULATOR)
@@ -18,6 +19,7 @@ if(ARGOS_BUILD_FOR_SIMULATOR)
     simulator/thymio_ground_rotzonly_sensor.h
     simulator/thymio_led_actuator.h
 #    simulator/Thymio_acc_sensor.h
+    simulator/thymio_positioning_sensor.h
     )
 endif(ARGOS_BUILD_FOR_SIMULATOR)
 
@@ -45,6 +47,7 @@ set(ARGOS3_SOURCES_PLUGINS_ROBOTS_THYMIO
   control_interface/ci_thymio_proximity_sensor.cpp
   control_interface/ci_thymio_leds_actuator.cpp
   control_interface/ci_thymio_acc_sensor.cpp
+  control_interface/ci_thymio_positioning_sensor.cpp
   )
 
 if(ARGOS_BUILD_FOR_SIMULATOR)
@@ -58,6 +61,7 @@ if(ARGOS_BUILD_FOR_SIMULATOR)
       simulator/thymio_proximity_default_sensor.cpp
       simulator/thymio_led_actuator.cpp
 #      simulator/Thymio_acc_sensor.cpp
+      simulator/thymio_positioning_sensor.cpp
       )
   # Compile the graphical visualization only if the necessary libraries have been found
     include(ARGoSCheckQTOpenGL)
